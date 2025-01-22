@@ -1,0 +1,40 @@
+/* Hero-sektion */
+.hero {
+    position: relative;
+    height: 100vh; /* Gör hero-sektionen lika hög som hela skärmen */
+    width: 100%; /* Gör den fullbredd */
+    overflow: hidden; /* Dölj innehåll som hamnar utanför */
+   margin-bottom: 10px;
+}
+
+/* Bakgrundsvideo */
+.hero video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Gör så att videon täcker hela sektionen utan att förvrängas */
+    z-index: -1; /* Se till att videon ligger bakom innehållet */
+    filter: blur(8px); /* Lägg till suddig effekt */
+    
+}
+
+/* Innehållet över videon */
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Sätt textfärg till vit för kontrast mot videon */
+    text-align: center;
+    z-index: 1; /* Se till att innehållet syns ovanpå videon */
+}
+
+.hero-title {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-subtitle {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}

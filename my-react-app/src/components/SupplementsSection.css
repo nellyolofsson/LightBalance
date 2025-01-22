@@ -1,0 +1,29 @@
+/* Bild för  */
+.about-image-wrapper {
+    text-align: center; /* Centrerar bilden */
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.about-image {
+    width: 80%; /* Gör bilden mindre för att inte dominera */
+    max-width: 800px; /* Maximalt bredd på 500px */
+    height: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Lägger till en liten skugga */
+}
+
+/* Ny sektion för kosttillskott */
+.supplements {
+  
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.supplements-text {
+    font-size: 1.2em;
+    margin-top: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}

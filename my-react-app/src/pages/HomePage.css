@@ -1,0 +1,23 @@
+/* Allmän stil för sidan */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+body {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    line-height: 1.6;
+}
+
+.homepage-2 {  
+    position: relative;
+       background: linear-gradient(160deg, #cfd8d7, #004d40); 
+}
+
+
+
+
+
+
+
+
+

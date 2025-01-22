@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.contact {
+    position: relative; /* Gör sektionen en positioneringsreferens */
+    text-align: center;
+    padding: 40px 20px;
+    z-index: -1; 
+}
+
+.contact img {
+    width: 800px; 
+    height: auto;
+    z-index: -1; 
+}
+
+.section-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.overlay-text {
+    font-family: 'Poppins', sans-serif; /* Använd Poppins-fonten */
+    position: absolute; /* Placera texten ovanpå bilden */
+    top: 10%; /* Centrera texten vertikalt */
+    left: 30%; /* Centrera texten horisontellt */
+    transform: translate(-50%, -50%); /* För perfekt centrering */
+    color: rgb(16, 16, 16); /* Vit text för bättre kontrast */
+    font-size: 3em; /* Justera textstorleken */
+    z-index: 1; /* Se till att texten är ovanför bilden */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); /* Skugga för bättre läsbarhet */
+}
+
+.overlay-text2 {
+    font-family: 'Poppins', sans-serif; /* Använd Poppins-fonten */
+    position: absolute; /* Placera texten ovanpå bilden */
+    top: 60%; /* Centrera texten vertikalt */
+    left: 70%; /* Centrera texten horisontellt */
+    transform: translate(-50%, -50%); /* För perfekt centrering */
+    color: rgb(16, 16, 16); /* Vit text för bättre kontrast */
+    font-size: 3em; /* Justera textstorleken */
+    z-index: 1; /* Se till att texten är ovanför bilden */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); /* Skugga för bättre läsbarhet */
+}
+
+

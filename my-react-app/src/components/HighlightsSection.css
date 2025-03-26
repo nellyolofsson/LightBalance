@@ -1,0 +1,55 @@
+/* Container för hela sektionen */
+.highlights-container {
+    display: flex;
+    flex-wrap: wrap; /* Tillåter att lådorna går till nästa rad */
+    justify-content: center; /* Centrerar lådorna på varje rad */
+    gap: 20px; /* Mellanrum mellan lådorna */
+    padding: 20px;
+  }
+  
+  /* Rubrikens stil */
+  .section-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #00796b;
+    width: 100%; /* Gör att rubriken sträcker sig över hela bredden */
+    text-align: center; /* Centrerar rubriktexten */
+  }
+  
+  /* Lådor horisontellt */
+  .highlight-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: calc(50% - 20px); /* Gör lådan 50% bred minus gap */
+    max-width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover-effekt */
+  .highlight-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Ikoner */
+  .highlight-icon {
+    font-size: 40px;
+    color: #00796b;
+    margin-bottom: 10px;
+  }
+  
+  /* Responsiv design */
+  @media (max-width: 768px) {
+    .highlight-box {
+      width: 100%; /* På små skärmar blir lådorna 100% breda */
+    }
+  }
+  

@@ -1,29 +1,68 @@
-/* Bild för  */
-.about-image-wrapper {
-    text-align: center; /* Centrerar bilden */
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
 
-.about-image {
-    width: 80%; /* Gör bilden mindre för att inte dominera */
-    max-width: 800px; /* Maximalt bredd på 500px */
-    height: auto;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Lägger till en liten skugga */
-}
 
-/* Ny sektion för kosttillskott */
 .supplements {
-  
-    padding: 40px 20px;
+    position: relative;
+    height: 400px; /* Justera höjden beroende på behov */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    color: white; /* Gör texten synlig ovanpå bakgrunden */
+    background: 
+                url('../../public/images/pexels-n-voitkevich-7615562.jpg') center/cover no-repeat;
+    background-blend-mode: overlay; /* För att mixa bilder med bakgrundsfärg */
+    background-color: rgba(0, 0, 0, 0.5); /* Lägg till en mörk overlay */
+    padding: 20px;
+}
+
+.supplements-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
 .supplements-text {
-    font-size: 1.2em;
-    margin-top: 20px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.6;
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 20px;
 }
+
+.link {
+    color: #00796b;
+    text-decoration: none;
+    background-color: #00796b;
+    color: white;
+    transition: background-color 0.3s;
+    padding: 15px 30px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.link:hover {
+    background-color: #005f56;
+}
+  
+  /* Styla för små skärmar */
+  @media (max-width: 768px) {
+    .supplements img {
+      width: 90%;
+      max-width: 100%;
+      margin: 10px auto;
+    }
+  
+    .supplements-text {
+      font-size: 16px;
+    }
+  
+    .section-title {
+      font-size: 24px;
+    }
+  
+    .link {
+      font-size: 14px;
+      padding: 10px 20px;
+    }
+  }

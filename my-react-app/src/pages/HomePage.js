@@ -14,6 +14,8 @@ const HomePage = () => {
     return (
             
         <div className="homepage">
+             
+
  
             <HeroSection />
           
@@ -21,7 +23,7 @@ const HomePage = () => {
             <HighlightsSection /> 
           
             <AboutSection />  
-            <SupplementsSection />
+            <SupplementsSection /> 
             <ContactSection />
    
         

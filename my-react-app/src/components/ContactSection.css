@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 .contact {
-    position: relative; /* Gör sektionen en positioneringsreferens */
+    position: relative;
     text-align: center;
     padding: 40px 20px;
-    z-index: -1; 
+    z-index: -1;
 }
 
 .contact img {
-    width: 800px; 
+    width: 100%; /* Gör bilden responsiv */
     height: auto;
-    z-index: -1; 
+    max-width: 800px; /* Begränsar bilden på större skärmar */
+    z-index: -1;
 }
 
 .section-title {
@@ -23,28 +24,47 @@
     margin: 10px 0;
 }
 
-.overlay-text {
-    font-family: 'Poppins', sans-serif; /* Använd Poppins-fonten */
-    position: absolute; /* Placera texten ovanpå bilden */
-    top: 10%; /* Centrera texten vertikalt */
-    left: 30%; /* Centrera texten horisontellt */
-    transform: translate(-50%, -50%); /* För perfekt centrering */
-    color: rgb(16, 16, 16); /* Vit text för bättre kontrast */
-    font-size: 3em; /* Justera textstorleken */
-    z-index: 1; /* Se till att texten är ovanför bilden */
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); /* Skugga för bättre läsbarhet */
-}
-
+.overlay-text,
 .overlay-text2 {
-    font-family: 'Poppins', sans-serif; /* Använd Poppins-fonten */
-    position: absolute; /* Placera texten ovanpå bilden */
-    top: 60%; /* Centrera texten vertikalt */
-    left: 70%; /* Centrera texten horisontellt */
-    transform: translate(-50%, -50%); /* För perfekt centrering */
-    color: rgb(16, 16, 16); /* Vit text för bättre kontrast */
-    font-size: 3em; /* Justera textstorleken */
-    z-index: 1; /* Se till att texten är ovanför bilden */
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); /* Skugga för bättre läsbarhet */
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: rgb(16, 16, 16);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    font-size: 3em;
 }
 
+/* Placering på större skärmar */
+.overlay-text {
+    top: 10%;
+    left: 30%;
+}
+.overlay-text2 {
+    top: 60%;
+    left: 70%;
+}
 
+/* --- Mobilanpassning --- */
+@media (max-width: 768px) {
+    .overlay-text
+    {
+        font-size: 2em;
+    }
+    .overlay-text {
+        left: 30%;
+        color: white;
+    }
+   
+}
+
+@media (max-width: 480px) {
+    .overlay-text,
+    .overlay-text2 {
+        font-size: 1.5em;
+    }
+    .overlay-text {
+        top: 20%;
+    }
+
+}

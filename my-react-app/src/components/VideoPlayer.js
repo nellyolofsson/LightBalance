@@ -1,10 +1,8 @@
-// src/components/VideoPlayer.js
-import React from 'react';
 
 const VideoPlayer = ({ videoSrc }) => {
     return (
         <video
-            className="video-player" // Lägg till en klass för att kunna styla den om du vill
+            className="video-player"
             autoPlay
             loop
             muted

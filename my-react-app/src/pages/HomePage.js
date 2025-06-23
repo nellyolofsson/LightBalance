@@ -1,4 +1,3 @@
-import React from 'react';
 import './HomePage.css';
 import '../components/HeroSection.js'
 import HeroSection from '../components/HeroSection.js';
@@ -14,19 +13,12 @@ const HomePage = () => {
     return (
             
         <div className="homepage">
-             
-
- 
             <HeroSection />
-          
-               
             <HighlightsSection /> 
-          
             <AboutSection />  
             <SupplementsSection /> 
             <ContactSection />
    
-        
         </div>
     );
 };

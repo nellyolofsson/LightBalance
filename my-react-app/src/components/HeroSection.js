@@ -1,4 +1,3 @@
-import React from 'react';
 import VideoPlayer from '../components/VideoPlayer';
 import ButtonTreatment from '../components/ButtonTreatment';
 import './HeroSection.css';

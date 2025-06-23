@@ -15,10 +15,13 @@
     padding: 20px;
 }
 
-.supplements-title {
-    font-size: 2rem;
+.h1 {
+    font-size: 5rem;
     margin-bottom: 20px;
+    color: #fff; /* Vit färg för att kontrastera mot bakgrunden */
 }
+
+
 
 .supplements-text {
     font-size: 1.2rem;
@@ -26,43 +29,28 @@
     margin: 0 auto 20px;
 }
 
-.link {
-    color: #00796b;
-    text-decoration: none;
-    background-color: #00796b;
-    color: white;
-    transition: background-color 0.3s;
-    padding: 15px 30px;
-    font-size: 1em;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-family: 'Poppins', sans-serif;
-}
-
-
-.link:hover {
-    background-color: #005f56;
-}
-  
-  /* Styla för små skärmar */
-  @media (max-width: 768px) {
-    .supplements img {
-      width: 90%;
-      max-width: 100%;
-      margin: 10px auto;
-    }
-  
-    .supplements-text {
-      font-size: 16px;
-    }
-  
-    .section-title {
-      font-size: 24px;
-    }
-  
-    .link {
-      font-size: 14px;
-      padding: 10px 20px;
-    }
+    /* ---- Responsiv anpassning ---- */
+@media (max-width: 768px) {
+  .supplements {
+    padding: 2rem 1rem;
   }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .supplements-text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .supplements-text {
+    font-size: 0.9rem;
+  }
+}
+  

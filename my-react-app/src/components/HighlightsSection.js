@@ -1,4 +1,3 @@
-import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeartbeat, faHandHoldingWater, faAppleAlt, faBolt } from '@fortawesome/free-solid-svg-icons';
 import './HighlightsSection.css';

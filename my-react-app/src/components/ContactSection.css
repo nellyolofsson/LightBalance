@@ -4,14 +4,14 @@
     position: relative;
     text-align: center;
     padding: 40px 20px;
-    z-index: -1;
+  
 }
 
 .contact img {
     width: 100%; /* Gör bilden responsiv */
     height: auto;
     max-width: 800px; /* Begränsar bilden på större skärmar */
-    z-index: -1;
+  
 }
 
 .section-title {
@@ -44,6 +44,16 @@
     top: 60%;
     left: 70%;
 }
+
+
+
+.contact p a:hover {
+  color: #0077cc; 
+  padding: 8px;
+
+}
+
+
 
 /* --- Mobilanpassning --- */
 @media (max-width: 768px) {

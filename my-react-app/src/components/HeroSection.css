@@ -38,3 +38,24 @@
     font-size: 1.5em;
     margin-bottom: 30px;
 }
+
+/* === Mobilanpassning === */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.2em; /* mindre fontstorlek på surfplattor */
+    }
+
+    .hero-subtitle {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 1.8em; /* ännu mindre på telefoner */
+    }
+
+    .hero-subtitle {
+        font-size: 1em;
+    }
+}

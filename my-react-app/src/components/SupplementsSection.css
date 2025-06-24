@@ -15,12 +15,11 @@
     padding: 20px;
 }
 
-.h1 {
-    font-size: 5rem;
-    margin-bottom: 20px;
-    color: #fff; /* Vit färg för att kontrastera mot bakgrunden */
+.cost {
+    font-size: 2em;
+    margin-top: 10px;
+    color: white;
 }
-
 
 
 .supplements-text {
@@ -39,9 +38,7 @@
     font-size: 2rem;
   }
 
-  .supplements-text {
-    font-size: 1rem;
-  }
+ 
 }
 
 @media (max-width: 480px) {

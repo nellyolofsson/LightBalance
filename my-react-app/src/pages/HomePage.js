@@ -17,7 +17,9 @@ const HomePage = () => {
             <HighlightsSection /> 
             <AboutSection />  
             <SupplementsSection /> 
+         
             <ContactSection />
+              
    
         </div>
     );

@@ -45,11 +45,15 @@
     left: 70%;
 }
 
+
+
 .contact p a {
   color: inherit;
-  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+    text-decoration: none;
   transition: color 0.2s;
-  margin-right: 8px;;
+  padding: 5px 10px;
+
 }
 .contact p a:hover {
   color: #0077cc; 
